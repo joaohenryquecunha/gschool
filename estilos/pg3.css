@@ -1,0 +1,148 @@
+main {
+    max-width: 900px;
+    margin: auto;
+    padding: 10px;
+    display: block;
+}
+
+body {
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("/src/fundo2.png");
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    display: block;
+    padding: 20px;
+}
+
+@media (min-width: 596px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        text-decoration: none;
+        font-size: 1em;
+        transition: .5s;
+        color: blue;
+    }
+}
+
+@media (max-width:596px) {
+    nav {
+        margin-top: 20px;
+    }
+}
+
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+.separar::after {
+    content: '|';
+    color: #000;
+    margin-right: 10.3px;
+    font-size: 18px;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #300d80;
+}
+
+a .separar {
+    height: 1.313em;
+    width: 3.526em;
+}
+
+a {
+    height: 21px;
+    width: 4.403em;
+    min-height: auto;
+    min-width: auto;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: .5s;
+    color: blue;
+}
+
+article {
+    display: block;
+}
+
+article h2 {
+    margin: 15px 0px;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+article p {
+    margin: 20px 0px;
+    text-align: justify;
+    line-height: 1.5em;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+form {
+    display: block;
+    margin-top: 0em;
+}
+
+div {
+    display: block;
+}
+
+label {
+    cursor: default;
+}
+
+input {
+    width: 165px;
+    height: 13px;
+}
+
+textarea {
+    width: 237px;
+}
+
+input[type="submit" i] {
+    width: 42px;
+    height: 19px;
+    font-size: 13px;
+}
+
+input[type="email" i] {
+    padding: 1px 2px;
+}
+
+input[type="text" i] {
+    padding: 1px 2px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin: 7px 0px;
+}
